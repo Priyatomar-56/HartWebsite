@@ -245,13 +245,3 @@ const Button1=styled.button`
     flex-direction:column; 
 };
 `
-
-{/* <Card>
-         <CardBody class="card">
-        <Image src={Face} class="card-img-top" marginleft={"75px"} alt="Fissure in Sandstone"/>
-         <CardBody class="card-body">
-        <Heading2 class="card-title" marginleft={"57px"}>Insights on Your Health.</Heading2>
-        <Para class="card-text" marginleft={"55px"} width={"257px"}>Get infographics and other interpretations of your medical history to better understand your health!</Para>
-        </CardBody>
-        </CardBody>
-        </Card> */}
