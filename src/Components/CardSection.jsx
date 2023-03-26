@@ -5,7 +5,7 @@ import Couple from '../Images/couple.png';
 import Face from '../Images/face.png'
 import Doggy from '../Images/Doggy.png'
 import './Main.css';
-import {AiOutlineArrowRight} from 'react-icons/ai'
+// import {AiOutlineArrowRight} from 'react-icons/ai'
 import Footer from './Footer';
 const CardSection = () => {
   return (
@@ -34,8 +34,8 @@ const CardSection = () => {
         <Heading3>Join Hart Now<span style={{color:"#23CFA4"}}>!</span></Heading3>
         <Container4>
         <Para2><span style={{color:"#23CFA4"}}>Find Peace in the Chaos</span><br></br>
-Be a part of the revolution to change healthcare in India!<br></br></Para2>
-<Button1 action="https://docs.google.com/forms/d/e/1FAIpQLSfMp7EwAKtKYbvzCsNgXdwqGk-PHm1hPhpuZuvwWj-s81rQqg/viewform" style={{fontSize:'17px'}}>   
+         Be a part of the revolution to change healthcare in India!<br></br></Para2>
+        <Button1 action="https://docs.google.com/forms/d/e/1FAIpQLSfMp7EwAKtKYbvzCsNgXdwqGk-PHm1hPhpuZuvwWj-s81rQqg/viewform" style={{fontSize:'17px'}}>   
         <Input1 type="submit" value="Register for early access"/>
         </Button1></Container4>
         </Container3>
