@@ -11,7 +11,6 @@ const CardSection = () => {
   return (
     <Container>
      <Heading>Safe <span style={{color:"#23CFA4"}}>&</span> Secure <span style={{color:"#23CFA4"}}>.</span></Heading>
-     
      <Container2>
         <Card>
         <Image src={Phone} class="card-img-top" width={210} height={313} marginleft={"55px"} Resmarginleft={"14px"} alt="Fissure in Sandstone"/>
@@ -30,14 +29,15 @@ const CardSection = () => {
         </Card>
         </Container2>
         <Container3>
+        <Containerleft>
         <Image2 src={Doggy}></Image2>
+        </Containerleft>
+        <ContainerRight>
         <Heading3>Join Hart Now<span style={{color:"#23CFA4"}}>!</span></Heading3>
-        <Container4>
         <Para2><span style={{color:"#23CFA4"}}>Find Peace in the Chaos</span><br></br>
          Be a part of the revolution to change healthcare in India!<br></br></Para2>
-        <Button1 action="https://docs.google.com/forms/d/e/1FAIpQLSfMp7EwAKtKYbvzCsNgXdwqGk-PHm1hPhpuZuvwWj-s81rQqg/viewform" style={{fontSize:'17px'}}>   
-        <Input1 type="submit" value="Register for early access"/>
-        </Button1></Container4>
+         <Button1 target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfMp7EwAKtKYbvzCsNgXdwqGk-PHm1hPhpuZuvwWj-s81rQqg/viewform" style={{fontSize:'17px'}}>Register for early access </Button1>
+         </ContainerRight>
         </Container3>
         <Footer></Footer>
     </Container>
@@ -59,42 +59,30 @@ const Heading=styled.h1`
 };
 `
 const Container=styled.div`
-    /* border:2px solid red; */
-    height:977px;
     @media screen and (max-width: 500px){
-      height:677px;
-       /* border:2px solid red; */
        margin-top:35px;
 };
 `
 const Card=styled.div`
-    /* border:2px solid red; */
     height:645px; 
     width: 350px;
     background-color:#131415;
-    margin-left:45px;
     border-radius: 30px;
     @media screen and (max-width: 500px){
       height:707px;
       width: 246px;
-      margin-left:55px;
       margin-bottom:15px;
       margin-top:24px;
-      /* border:2px solid #9cccc7; */
 };
 `
 const Para=styled.p`
     color: #8A8F98;
     margin-top:35px;
-    height:115px;
     padding:5px 5px;
-    justify-content:'center';
-    align-items:center;
     text-align:center;
     margin-left:${({marginleft})=>marginleft};
     width:${({width})=>width};
     @media screen and (max-width: 500px){
-      height:77px;
       margin-left:23px;
       margin-top:-3px;
       margin-left:${({Resmarginleft})=>Resmarginleft};
@@ -122,10 +110,9 @@ const Container2=styled.div`
     display:flex; 
     flex-direction:row; 
     flex-wrap:nowrap;
-    height:657px;
+    justify-content:space-evenly;
     margin-bottom:10px;
     @media screen and (max-width: 500px){
-      height:1707px;
       flex-direction:column;
       flex-wrap:nowrap;
       margin-bottom:45px;
@@ -148,13 +135,10 @@ const Heading2=styled.h1`
   font-family: Inter,Helvetica,Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Noto Color Emoji,Segoe UI Symbol,Android Emoji,EmojiSymbols,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Noto Sans,sans-serif;
 `
  const Container3=styled.div`
-    /* border:2px solid red; */
-    height:545px;
      display:flex; 
     flex-direction:row; 
     flex-wrap:nowrap; 
     @media screen and (max-width: 500px){
-      height:437px;
       flex-direction:column; 
       margin-bottom:10px;
 };
@@ -166,6 +150,7 @@ const Heading2=styled.h1`
  align-items:center;
  margin-top:85px;
  margin-left:105px;
+ margin-bottom:30px;
  @media screen and (max-width: 500px){
       height:377px;
       width:260px; 
@@ -179,11 +164,8 @@ const Heading3=styled.h1`
   font-size: 45px;
   margin-top:122px;
   margin-left:97px;
-  /* border:2px solid red; */
-  height:45px;
   font-family: Inter,Helvetica,Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Noto Color Emoji,Segoe UI Symbol,Android Emoji,EmojiSymbols,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Noto Sans,sans-serif;
   @media screen and (max-width: 500px){
-      height:27px;
       font-size: 35px;
       margin-top:12px;
   margin-left:47px;
@@ -192,22 +174,20 @@ const Heading3=styled.h1`
 `
 const Para2=styled.p`
    color: #8A8F98;
-    margin-top:225px;
-    height:65px;
-    width:512px;
-    font-size:20px;
-    margin-left:-320px;
-    float:left;
+    margin-top:35px;
+    font-size:17px;
+    margin-left:97px;
     @media screen and (max-width: 500px){
-      height:27px;
-      width:212px;
       margin-left:60px;
       margin-top:25px;
       margin-bottom:35px;
 };
  
 `
- const Container4=styled.div`
+const Containerleft=styled.div`
+  display:flex;
+`
+ const ContainerRight=styled.div`
   display:flex; 
   flex-direction:column; 
   flex-wrap:nowrap;
@@ -216,17 +196,18 @@ const Para2=styled.p`
     margin-bottom:10px;
 };
 `
-const Button1=styled.form`
+const Button1=styled.a`
   height:45px; 
   width:255px; 
  background-color:#23CFA4;
  margin-top:70px;
-  margin-left:-310px;
   border-radius:25px;
-  padding:2px -12px;
-  border:none;
+  padding:10px 12px;
+  text-align: center;
+  text-decoration: none;
   color:black;
   font-weight:550;
+  margin-left:97px;
   @media screen and (max-width: 500px){
     height:35px; 
   width:225px; 
@@ -237,17 +218,4 @@ const Button1=styled.form`
   margin-bottom:20px;
 };
 `
-const Input1=styled.input`
-   color:black;
-  font-weight:550;
-  background-color:#23CFA4;
-  font-size:17px;
-  margin-left:25px;
-  border:none; 
-  margin-top:10px;
-  @media screen and (max-width: 500px){
-    margin-left:10px;
-    font-size:15px;
-    margin-top:5px;
-  }
-`
+
