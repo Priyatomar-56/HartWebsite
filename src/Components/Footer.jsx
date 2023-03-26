@@ -31,7 +31,7 @@ const Container=styled.div`
     flex-wrap:nowrap; 
     @media screen and (max-width: 500px){
       flex-direction:column;
-      margin-top:210px;  
+      margin-top:10px;  
     };
 `
 const ContainerLeft=styled.div`

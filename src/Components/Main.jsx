@@ -57,9 +57,11 @@ const Heading2=styled.div`
   margin-left:30px;
  font-family: Inter,Helvetica,Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Noto Color Emoji,Segoe UI Symbol,Android Emoji,EmojiSymbols,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Noto Sans,sans-serif; 
   @media screen and (max-width: 500px){
-  font-size: 36px;
+  font-size: 34px;
+  font-weight:700;
+  height:165px;
   text-align:left;
-    margin-left:15px;
+    margin-left:10px;
     margin-top:40px;
 };
 `
@@ -89,12 +91,11 @@ const Para=styled.p`
   font-size:19px;
   color:white;
   margin-top:50px;
-  font-weight:0;
   margin-left:30px;
   @media screen and (max-width: 500px){
   margin-top:30px;
-  margin-left:20px;
-  font-size:17px;
+  margin-left:13px;
+  font-size:14px;
 };
 `
 const Button1=styled.a`
@@ -110,11 +111,11 @@ const Button1=styled.a`
   color:black;
   font-weight:400;
   @media screen and (max-width: 500px){
-    font-size: 25px;
     height:30px; 
   width:215px;
-  margin-left:-300px; 
-  margin-top:420px;
+  margin-left:20px; 
+  padding:1px 2px;
+  margin-top:20px;
 };
 `
 const Image1=styled.img`
@@ -123,10 +124,10 @@ const Image1=styled.img`
   margin-top:15px;
 margin-left:87px;
   @media screen and (max-width: 500px){
-    height:326px; 
+    height:316px; 
   width:284px;
-  margin-top:95px;
-  margin-left:22px;
+  margin-top:45px;
+  margin-left:32px;
 };
 `
 
