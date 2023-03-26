@@ -14,17 +14,17 @@ const CardSection = () => {
      
      <Container2>
         <Card>
-        <Image src={Phone} class="card-img-top" marginleft={"55px"} Resmarginleft={"14px"} alt="Fissure in Sandstone"/>
+        <Image src={Phone} class="card-img-top" width={210} height={313} marginleft={"55px"} Resmarginleft={"14px"} alt="Fissure in Sandstone"/>
         <Heading2 class="card-title">Store All Your Medical Documents Online.</Heading2>
         <Para class="card-text" marginleft={"85px"} width={"177px"} Resmarginleft={"25px"}>With a single click, store all of your medical documents in an organised manner.</Para>
         </Card>
         <Card>
-        <Image src={Couple} class="card-img-top" marginleft={"105px"}  Resmarginleft={"54px"} alt="Fissure in Sandstone"/>
+        <Image src={Couple} class="card-img-top" marginleft={"105px"} width={260} height={313} Resmarginleft={"54px"} alt="Fissure in Sandstone"/>
         <Heading2 class="card-title" marginleft={"67px"} Resmarginleft={"37px"}>Take Care of Your<br/>Family.</Heading2>
         <Para class="card-text" marginleft={"45px"} width={"257px"}  Resmarginleft={"-12px"}>Track the health of your parents and children.<br></br>Share your documents with doctors and revoke access anytime.</Para>
         </Card>
         <Card>
-        <Image src={Face} class="card-img-top" marginleft={"75px"}  Resmarginleft={"14px"}alt="Fissure in Sandstone"/>
+        <Image src={Face} class="card-img-top" marginleft={"45px"} width={260} height={313} Resmarginleft={"14px"}alt="Fissure in Sandstone"/>
         <Heading2 class="card-title" marginleft={"57px"} Resmarginleft={"8px"}>Insights on Your Health.</Heading2>
         <Para class="card-text" marginleft={"55px"} width={"257px"} Resmarginleft={"-9px"}>Get infographics and other interpretations of your medical history to better understand your health!</Para>
         </Card>
@@ -34,9 +34,10 @@ const CardSection = () => {
         <Heading3>Join Hart Now<span style={{color:"#23CFA4"}}>!</span></Heading3>
         <Container4>
         <Para2><span style={{color:"#23CFA4"}}>Find Peace in the Chaos</span><br></br>
-Be a part of the revolution to change healthcare in India!</Para2>
-<Button1 style={{fontSize:'17px'}}>Register for early access</Button1><AiOutlineArrowRight className='arrow2' style={{color:"#080808"}}></AiOutlineArrowRight>
-</Container4>
+Be a part of the revolution to change healthcare in India!<br></br></Para2>
+<Button1 action="https://docs.google.com/forms/d/e/1FAIpQLSfMp7EwAKtKYbvzCsNgXdwqGk-PHm1hPhpuZuvwWj-s81rQqg/viewform" style={{fontSize:'17px'}}>   
+        <Input1 type="submit" value="Register for early access"/>
+        </Button1></Container4>
         </Container3>
         <Footer></Footer>
     </Container>
@@ -69,7 +70,7 @@ const Container=styled.div`
 const Card=styled.div`
     /* border:2px solid red; */
     height:645px; 
-    width: 345px;
+    width: 350px;
     background-color:#131415;
     margin-left:45px;
     border-radius: 30px;
@@ -102,25 +103,12 @@ const Para=styled.p`
 
 };
 `
-// const CardBody=styled.div`
-//   background-color:#131415;
-//   border-radius:30px;
-//      border:2px solid white; 
-//   @media screen and (max-width: 500px){
-//     /* border:2px solid white;  */
-//     margin-bottom:45px; 
-//     margin-top:45px;
-//     height:354px;
-//     border:2px solid yellow;
-// };
-// `
 const Image=styled.img`
-    width:210px; 
-    height:313px;
     justify-content:center; 
     align-items:center;
+    height:${({height})=>height};
+    width:${({width})=>width};
     margin-left:${({marginleft})=>marginleft};
-    /* background-color:#131415; */
     margin-top:55px;
     @media screen and (max-width: 500px){
       width:210px; 
@@ -166,8 +154,9 @@ const Heading2=styled.h1`
     flex-direction:row; 
     flex-wrap:nowrap; 
     @media screen and (max-width: 500px){
-      height:377px;
+      height:437px;
       flex-direction:column; 
+      margin-bottom:10px;
 };
  `
  const Image2=styled.img`
@@ -179,9 +168,9 @@ const Heading2=styled.h1`
  margin-left:105px;
  @media screen and (max-width: 500px){
       height:377px;
-      width:250px; 
+      width:260px; 
       margin-top:15px;
- margin-left:45px;
+ margin-left:55px;
  margin-bottom:30px;
 };
 `
@@ -198,6 +187,7 @@ const Heading3=styled.h1`
       font-size: 35px;
       margin-top:12px;
   margin-left:47px;
+  margin-bottom:10px;
 };
 `
 const Para2=styled.p`
@@ -206,8 +196,6 @@ const Para2=styled.p`
     height:65px;
     width:512px;
     font-size:20px;
-    /* border:2px solid yellow; */
-    /* margin-right:295px; */
     margin-left:-320px;
     float:left;
     @media screen and (max-width: 500px){
@@ -215,14 +203,24 @@ const Para2=styled.p`
       width:212px;
       margin-left:60px;
       margin-top:25px;
+      margin-bottom:35px;
 };
  
 `
-const Button1=styled.button`
+ const Container4=styled.div`
+  display:flex; 
+  flex-direction:column; 
+  flex-wrap:nowrap;
+  @media screen and (max-width: 500px){
+    flex-direction:column; 
+    margin-bottom:10px;
+};
+`
+const Button1=styled.form`
   height:45px; 
   width:255px; 
  background-color:#23CFA4;
-  margin-top:70px;
+ margin-top:70px;
   margin-left:-310px;
   border-radius:25px;
   padding:2px -12px;
@@ -231,27 +229,25 @@ const Button1=styled.button`
   font-weight:550;
   @media screen and (max-width: 500px){
     height:35px; 
-  width:255px; 
+  width:225px; 
+  border-radius:20px;
   align-self:center;
-  margin-left:10px;
+  margin-left:-17px;
   margin-top:110px;
+  margin-bottom:20px;
 };
 `
- const Container4=styled.div`
-  display:flex; 
-  flex-direction:column; 
-  flex-wrap:nowrap;
+const Input1=styled.input`
+   color:black;
+  font-weight:550;
+  background-color:#23CFA4;
+  font-size:17px;
+  margin-left:25px;
+  border:none; 
+  margin-top:10px;
   @media screen and (max-width: 500px){
-    flex-direction:column; 
-};
+    margin-left:10px;
+    font-size:15px;
+    margin-top:5px;
+  }
 `
-
-{/* <Card>
-         <CardBody class="card">
-        <Image src={Face} class="card-img-top" marginleft={"75px"} alt="Fissure in Sandstone"/>
-         <CardBody class="card-body">
-        <Heading2 class="card-title" marginleft={"57px"}>Insights on Your Health.</Heading2>
-        <Para class="card-text" marginleft={"55px"} width={"257px"}>Get infographics and other interpretations of your medical history to better understand your health!</Para>
-        </CardBody>
-        </CardBody>
-        </Card> */}

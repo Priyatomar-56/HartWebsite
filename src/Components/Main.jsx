@@ -106,7 +106,7 @@ const Para=styled.p`
   width: 85%;
 };
 `
-const Button1=styled.button`
+const Button1=styled.form`
   height:45px; 
   width:255px; 
  background-color:#23CFA4;
@@ -137,6 +137,20 @@ margin-left:87px;
   margin-left:22px;
 };
 `
+const Input1=styled.input`
+   color:black;
+  font-weight:550;
+  background-color:#23CFA4;
+  font-size:17px;
+  margin-left:25px;
+  border:none; 
+  margin-top:10px;
+  @media screen and (max-width: 500px){
+    margin-left:15px;
+    font-size:15px;
+    margin-top:3px;
+  }
+`
 const Main = () => {
   return (
     <Container1>
@@ -147,7 +161,10 @@ const Main = () => {
       <Heading1>Hart<span style={{color:"#23CFA4"}}>.</span></Heading1>
       <Heading2>Store All Your <span style={{color:"#23CFA4"}}>Medical    Documents</span> Online<span style={{color:"#23CFA4"}}>.</span></Heading2>
       <Para>Also track your <span style={{color:"#23CFA4"}}>family's medical history </span>and share your prescriptions and test reports with doctors <span style={{color:"#23CFA4"}}>securely in one-click.</span></Para>
-      <Button1 style={{fontSize:'17px'}}>Register for early access</Button1>
+      {/* <Button1 action=''style={{fontSize:'17px'}}>Register for early access</Button1> */}
+      <Button1 action="https://docs.google.com/forms/d/e/1FAIpQLSfMp7EwAKtKYbvzCsNgXdwqGk-PHm1hPhpuZuvwWj-s81rQqg/viewform" style={{fontSize:'17px'}}>   
+        <Input1 type="submit" value="Register for early access"/>
+        </Button1>
       <AiOutlineArrowRight className='arrow' style={{color:"#080808"}}></AiOutlineArrowRight>
       </ContainerLeft>
       <ContainerRight>
