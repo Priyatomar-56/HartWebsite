@@ -73,8 +73,7 @@ const Card=styled.div`
       width: 306px;
       margin-bottom:15px;
       margin-top:24px;
-      margin-left:40px;
-      margin-right:40px;
+      margin-left:30px;
 };
 `
 const Para=styled.p`

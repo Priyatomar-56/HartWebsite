@@ -5,35 +5,7 @@ import styled from 'styled-components';
 import {AiOutlineArrowRight} from 'react-icons/ai'
 import Phone from '../Images/pic3.png';
 import CardSection from './CardSection';
-const Image=styled.img`
-  height: 64px;
-  width:64px;
-  margin-top: 40px; 
-  margin-left: 50px;
-  @media screen and (max-width: 500px){
-    height: 54px;
-  width:54px;
-  margin-top: 25px; 
-  margin-left: 20px;
-};
-`
-const Heading1=styled.h1`
-  color:white;
-  font-size: 45px;
-  margin-left: 60px;
-  margin-top:40px;
-  font-weight:600;
- font-family: Inter,Helvetica,Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Noto Color Emoji,Segoe UI Symbol,Android Emoji,EmojiSymbols,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Noto Sans,sans-serif;
- @media screen and (max-width: 500px){
-    font-size: 35px;
-  margin-left: 20px;
-  margin-top:25px;
-};
-`
-const Hartlogo=styled.div`
-  display:flex;
-  flex-direction:row;
-`
+import Header from '../Components/Header';
 const Container1=styled.div`
   display:flex;
   flex-direction:column;
@@ -46,6 +18,7 @@ const Container2=styled.div`
   display:flex;
   flex-direction:row;
   flex-wrap: nowrap;
+  margin-top:135px;
   @media screen and (max-width: 500px){
     flex-direction:column;
 };
@@ -57,11 +30,9 @@ const Heading2=styled.div`
   margin-left:30px;
  font-family: Inter,Helvetica,Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Noto Color Emoji,Segoe UI Symbol,Android Emoji,EmojiSymbols,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Noto Sans,sans-serif; 
   @media screen and (max-width: 500px){
-  font-size: 34px;
-  font-weight:700;
-  height:165px;
+  font-size: 30px;
+  font-weight:600;
   text-align:left;
-    margin-left:10px;
     margin-top:40px;
 };
 `
@@ -74,7 +45,8 @@ margin-top:30px;
   margin-left:30px;
   @media screen and (max-width: 500px){
     width:360px; 
-  height:245px;
+  height:200px;
+  margin-left:0px;
 };
 `
 const ContainerRight=styled.div`
@@ -94,7 +66,7 @@ const Para=styled.p`
   margin-left:30px;
   @media screen and (max-width: 500px){
   margin-top:30px;
-  margin-left:13px;
+  height:231px;
   font-size:14px;
 };
 `
@@ -113,7 +85,7 @@ const Button1=styled.a`
   @media screen and (max-width: 500px){
     height:30px; 
   width:215px;
-  margin-left:20px; 
+  margin-left:30px; 
   padding:1px 2px;
   margin-top:20px;
 };
@@ -135,10 +107,7 @@ margin-left:87px;
 const Main = () => {
   return (
     <Container1>
-      <Hartlogo>      
-      <Image src={Logo} alt='image1'></Image>
-      <Heading1>Hart<span style={{color:"#23CFA4"}}>.</span></Heading1>
-      </Hartlogo>
+      <Header></Header>
       <Container2>
       <ContainerLeft>
       <Heading2>Store All Your <span style={{color:"#23CFA4"}}>Medical    Documents</span> Online<span style={{color:"#23CFA4"}}>.</span></Heading2>
