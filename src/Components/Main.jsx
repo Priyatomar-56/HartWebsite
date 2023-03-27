@@ -1,6 +1,5 @@
 import React from 'react'
 import './Main.css'
-import Logo from '../Images/pic2.png';
 import styled from 'styled-components';
 import {AiOutlineArrowRight} from 'react-icons/ai'
 import Phone from '../Images/pic3.png';
