@@ -5,7 +5,6 @@ import {RxCross2} from "react-icons/rx";
 import {CgMenu} from "react-icons/cg";
 import "../styles/humburger.css";
 import MenuBar from './Menubar';
-
 function Header() {
 
   const [disp,setDisp] = useState('none');
@@ -30,14 +29,13 @@ function Header() {
     </Left>
   
     <Center><Menu>
-    <MenuItem>Our Product</MenuItem>
     <MenuItem>About</MenuItem>
-        <MenuItem>Blogs</MenuItem>
-        <MenuItem>ABDM</MenuItem>
+    <MenuItem>Blogs</MenuItem>
+    <MenuItem>ABDM</MenuItem>
     </Menu>
     </Center>
-    {ham && <CgMenu class="humburger" onClick={toggleState}></CgMenu>}
-    {!ham && <RxCross2 class="humburger" onClick={toggleState}></RxCross2>}
+    {ham && <CgMenu className="humburger" onClick={toggleState}></CgMenu>}
+    {!ham && <RxCross2 className="humburger" onClick={toggleState}></RxCross2>}
     </Container>
     <MenuBar disp={disp}/>
   </>
@@ -81,9 +79,8 @@ height:70px;
 @media screen and (max-width: 500px){
     margin-left:10px;
     margin-top:20px;
-    height:50px;
-    width:50px;
-    border:2px solid red;
+    height:60px;
+    width:60px;
 }
 `;
 const Left=styled.div` 
@@ -107,6 +104,4 @@ const MenuItem=styled.li`
        display:none;  
        margin-right:30px;
     }`;
-const U=styled.ul`
-    color:white;
-`
+

@@ -185,7 +185,7 @@ const Para2=styled.p`
       margin-left:30px;
       font-size:19px;
       margin-top:25px;
-      margin-bottom:5px;
+      margin-bottom:0px;
 };
  
 `

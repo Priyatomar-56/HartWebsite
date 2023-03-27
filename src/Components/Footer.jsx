@@ -31,7 +31,7 @@ const Container=styled.div`
     flex-wrap:nowrap; 
     @media screen and (max-width: 500px){
       flex-direction:column;
-      margin-top:10px;  
+      margin-top:3px;  
     };
 `
 const ContainerLeft=styled.div`
@@ -78,7 +78,8 @@ const ContainerLeft2=styled.div`
      flex-wrap:nowrap;
      margin-top:20px;
      @media screen and (max-width: 500px){
-      flex-direction:column;  
+      flex-direction:column; 
+      margin-top:5px; 
     };
 `
 const ContainerLeft3=styled.div`
@@ -87,7 +88,8 @@ const ContainerLeft3=styled.div`
      flex-wrap:nowrap;
      margin-top:20px;
      @media screen and (max-width: 500px){
-      flex-direction:column;  
+      flex-direction:column; 
+      margin-top:5px; 
     };
 `
 const Para3=styled.p`
