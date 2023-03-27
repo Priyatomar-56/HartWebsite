@@ -30,6 +30,8 @@ function Header() {
     </Left>
   
     <Center><Menu>
+    <MenuItem>Our Product</MenuItem>
+    <MenuItem>About</MenuItem>
         <MenuItem>Blogs</MenuItem>
         <MenuItem>ABDM</MenuItem>
     </Menu>
