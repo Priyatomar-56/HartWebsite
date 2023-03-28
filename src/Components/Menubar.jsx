@@ -3,8 +3,7 @@ const Heading=styled.h2`
     color:white;
     display:none; 
     font-size:20px; 
-    justify-content:center;
-    margin-left:12px;
+    text-align:center;
     @media screen and (max-width: 500px){
        display:block;  
     };
@@ -15,6 +14,7 @@ position:absolute;
     display:none;
     margin-top:24px;
     width:240px;
+    background-color:black;
     margin-left:105px;
     border:1px solid #ccc4c4;
     border-radius:30px;
@@ -25,7 +25,7 @@ position:absolute;
 const MenuBar = (props) => {
     return (  
         <Container disp={props.disp}>
-            <Heading>Our Product</Heading>
+            <Heading>Our</Heading>
             <Heading>About</Heading>
             <Heading>Blogs</Heading>
             <Heading>ABDM</Heading>
