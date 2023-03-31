@@ -17,7 +17,7 @@ const Container2=styled.div`
   display:flex;
   flex-direction:row;
   flex-wrap: nowrap;
-  margin-top:135px;
+  margin-top:65px;
   @media screen and (max-width: 500px){
     flex-direction:column;
 };
@@ -25,14 +25,14 @@ const Container2=styled.div`
 const Heading2=styled.div`
    color:white;
   font-size: 51px;
-  margin-top:100px;
+  margin-top:20px;
   margin-left:30px;
  font-family: Inter,Helvetica,Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Noto Color Emoji,Segoe UI Symbol,Android Emoji,EmojiSymbols,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Noto Sans,sans-serif; 
   @media screen and (max-width: 500px){
   font-size: 30px;
   font-weight:600;
   text-align:left;
-    margin-top:40px;
+    margin-top:10px;
 };
 `
 const ContainerLeft=styled.div`
@@ -82,11 +82,13 @@ const Button1=styled.a`
   color:black;
   font-weight:400;
   @media screen and (max-width: 500px){
-    height:30px; 
-  width:215px;
-  margin-left:30px; 
-  padding:1px 2px;
-  margin-top:20px;
+  border-radius:20px;
+  align-self:center;
+  text-align: center;
+  margin-left:-17px;
+  margin-top:30px;
+  margin-bottom:20px;
+  padding:5px 5px;
 };
 `
 const Image1=styled.img`
@@ -101,8 +103,6 @@ margin-left:87px;
   margin-left:32px;
 };
 `
-
-
 const Main = () => {
   return (
     <Container1>

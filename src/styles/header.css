@@ -1,5 +1,5 @@
 .hart{
-    background-image: linear-gradient(135deg, #6699FF 0%, #FF3366 100%);
+    background-image: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
     background-clip: text;
     box-decoration-break: clone;
     background-size: 100%;
@@ -10,7 +10,11 @@
     font-weight: 700;
     font-size: 30px;
     margin-top: 5px;
-    
+    color: rgb(46, 227, 227);
+}
+
+.riya{
+    color: white;
 }
 
 .div{
@@ -22,4 +26,24 @@
 }
 .Product{
     color: aliceblue;
+}
+.B{
+    color: aliceblue;
+}
+.A{
+    color: aliceblue;
+}
+.P{
+    color: aliceblue;
+}
+@media(max-width: 500px){
+    .B{
+        color: black;
+    }
+    .A{
+        color: black;
+    }
+    .P{
+        color: rgb(19, 19, 20);
+    }
 }

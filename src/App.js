@@ -1,7 +1,7 @@
 
 import './App.css';
 import Main from '../src/Components/Main';
-import Navbar from '../src/Components/Navbar'
+// import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
    <div>
