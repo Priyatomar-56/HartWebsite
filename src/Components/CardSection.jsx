@@ -4,6 +4,7 @@ import Phone from '../Images/Phone1.png';
 import Couple from '../Images/couple.png'; 
 import Face from '../Images/face.png'
 import Doggy from '../Images/Doggy.png'
+import {AiOutlineArrowRight} from 'react-icons/ai'
 import './Main.css';
 // import {AiOutlineArrowRight} from 'react-icons/ai'
 import Footer from './Footer';
@@ -52,20 +53,11 @@ const CardSection = () => {
           <Image2 src={Doggy}/>
         </Containerleft>
         <ContainerRight>
-          <Heading3>
-            Join Hart Now
-            <span style={{color:"#23CFA4"}}>!</span>
-          </Heading3>
-          <Para2>
-            <span style={{color:"#23CFA4"}}>Find Peace in the Chaos</span>
-            <br/>
-            Be a part of the revolution to change healthcare in India!
-            <br/>
-          </Para2>
-          <Button1 target="_blank" rel="noopener noreferrer" style={{ fontSize: '17px' }}
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfMp7EwAKtKYbvzCsNgXdwqGk-PHm1hPhpuZuvwWj-s81rQqg/viewform">
-            Register for early access 
-          </Button1>
+        <Heading3>Join Hart Now<span style={{color:"#23CFA4"}}>!</span></Heading3>
+        <Para2><span style={{color:"#23CFA4"}}>Find Peace in the Chaos</span><br></br>
+         Be a part of the revolution to change healthcare in India!<br></br></Para2>
+         <Button1 target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfMp7EwAKtKYbvzCsNgXdwqGk-PHm1hPhpuZuvwWj-s81rQqg/viewform" style={{fontSize:'17px'}}>Register for early access </Button1>
+         <AiOutlineArrowRight className='arrow2' style={{color:"#151514"}}></AiOutlineArrowRight>
          </ContainerRight>
         </Container3>
       <Footer/>
@@ -235,7 +227,7 @@ const Button1=styled.a`
   background-color:#23CFA4;
   margin-top:70px;
   border-radius:25px;
-  padding:10px 12px;
+  padding:10px 10px;
   text-align: center;
   text-decoration: none;
   color:black;
@@ -243,12 +235,14 @@ const Button1=styled.a`
   margin-left:97px;
   @media screen and (max-width: 500px){
     height:35px; 
-    width:250px; 
-    border-radius:20px;
-    align-self:center;
-    text-align: center;
-    margin-left:-17px;
-    margin-bottom:20px;
-  };
+  width:250px; 
+  border-radius:20px;
+  align-self:center;
+  text-align: center;
+  margin-left:-17px;
+  margin-top:30px;
+  margin-bottom:20px;
+  padding:5px 5px;
+};
 `
 

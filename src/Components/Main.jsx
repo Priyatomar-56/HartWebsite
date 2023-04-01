@@ -19,7 +19,7 @@ const Container2=styled.div`
   display:flex;
   flex-direction:row;
   flex-wrap: nowrap;
-  margin-top:135px;
+  margin-top:5px;
   @media screen and (max-width: 500px){
     flex-direction:column;
   };
@@ -27,15 +27,15 @@ const Container2=styled.div`
 const Heading2=styled.div`
   color:white;
   font-size: 51px;
-  margin-top:100px;
+  margin-top:20px;
   margin-left:30px;
   font-family: Inter,Helvetica,Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Noto Color Emoji,Segoe UI Symbol,Android Emoji,EmojiSymbols,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Noto Sans,sans-serif; 
   @media screen and (max-width: 500px){
-    font-size: 30px;
-    font-weight:600;
-    text-align:left;
-    margin-top:40px;
-  };
+  font-size: 30px;
+  font-weight:600;
+  text-align:left;
+    margin-top:10px;
+};
 `
 const ContainerLeft=styled.div`
   margin-top:30px;
@@ -84,12 +84,14 @@ const Button1=styled.a`
   color:black;
   font-weight:400;
   @media screen and (max-width: 500px){
-    height:30px; 
-    width:215px;
-    margin-left:30px; 
-    padding:1px 2px;
-    margin-top:20px;
-  };
+  border-radius:20px;
+  align-self:center;
+  text-align: center;
+  margin-left:-17px;
+  margin-top:30px;
+  margin-bottom:20px;
+  padding:5px 5px;
+};
 `
 const Image1=styled.img`
   height:418px; 
@@ -103,38 +105,23 @@ const Image1=styled.img`
     margin-left:32px;
   };
 `
-
-
 const Main = () => {
   return (
     <Container1>
       <Header/>
         <Container2>
           <ContainerLeft>
-            <Heading2>
-              Store All Your 
-              <span style={{color:"#23CFA4"}}>Medical    Documents</span>
-                 Online
-              <span style={{color:"#23CFA4"}}>.</span>
-            </Heading2>
-            <Para>
-              Also track your 
-              <span style={{color:"#23CFA4"}}>family's medical history </span>
-              and share your prescriptions and test reports with doctors 
-              <span style={{color:"#23CFA4"}}>securely in one-click.</span>
-            </Para>
-            <Button1 target="_blank" rel="noopener noreferrer" style={{ fontSize: '17px' }}
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfMp7EwAKtKYbvzCsNgXdwqGk-PHm1hPhpuZuvwWj-s81rQqg/viewform" >
-              Register for early access 
-            </Button1>
+            <Heading2>Store All Your <span style={{color:"#23CFA4"}}>Medical    Documents</span> Online<span style={{color:"#23CFA4"}}>.</span></Heading2>
+            <Para>Also track your <span style={{color:"#23CFA4"}}>family's medical history </span>and share your prescriptions and test reports with doctors <span style={{color:"#23CFA4"}}>securely in one-click.</span></Para>
+            <Button1 target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfMp7EwAKtKYbvzCsNgXdwqGk-PHm1hPhpuZuvwWj-s81rQqg/viewform" style={{fontSize:'17px'}}>Register for early access </Button1>
             <AiOutlineArrowRight className='arrow' style={{color:"#151514"}}/>
           </ContainerLeft> 
           <ContainerRight>
-            <Image1 src={Phone} alt='Image2'/>
+            <Image1 src={Phone} alt='Image2'></Image1>
           </ContainerRight>
         </Container2>
-        <CardSection/>
-      </Container1>
+      <CardSection/>
+    </Container1>
     
   )
 }
