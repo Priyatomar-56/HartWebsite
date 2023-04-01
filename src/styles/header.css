@@ -12,7 +12,27 @@
     margin-top: 5px;
     color: rgb(46, 227, 227);
 }
-
+.nav-link{
+    color: #ffffff;
+    margin-left: 5px;
+}
+.nav-link:hover{
+    color: #ffffff;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #ffffff;
+    /* color: var(--bs-navbar-active-color); */
+}
+.offcanvas-header, .offcanvas-body{
+    background-color: rgb(1,1,1);
+}
+.offcanvas-header .btn-close{
+    background-color: #ffffff;
+}
+.navbar-toggler{
+    background-color: gray;
+    color: #ffffff  ;
+}
 .riya{
     color: white;
 }
@@ -27,14 +47,19 @@
 .Product{
     color: aliceblue;
 }
-.B{
-    color: aliceblue;
-}
+
 .A{
     color: aliceblue;
 }
 .P{
     color: aliceblue;
+}
+
+@media(min-width: 768px) {
+    .navBrand, .navLink{
+        margin-left: 30px;
+    }
+
 }
 @media(max-width: 500px){
     .B{

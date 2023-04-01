@@ -13,7 +13,7 @@ const Header = () => {
     <>
         <Navbar key={'md'} bg={"black"} expand={'md'} className="mb-3">
           <Container fluid>
-            <Navbar.Brand href="/" className='ms-5'>
+            <Navbar.Brand href="/" className='navBrand'>
               <div className={styles.div}>
                 <Image src={Logo} width={70} height={70} alt="logo"/>
                 <span className="text-white hart"> Hart</span>
@@ -28,7 +28,7 @@ const Header = () => {
             >
               <Offcanvas.Header closeButton >
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`} >
-                  Hart
+                <span className='text-white'>Hart</span> 
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -36,7 +36,8 @@ const Header = () => {
                   <NavDropdown
                     title="Our Product"
                     id={`offcanvasNavbarDropdown-expand-md`}
-                    className='ms-5 text-white'
+                    className='navLink'
+                    style={{color: '#fff'}}
                   >
                     <NavDropdown.Item href={`patients`}>For You</NavDropdown.Item>
                     <NavDropdown.Item href={`doctors`}> For Doctors </NavDropdown.Item>
@@ -45,20 +46,21 @@ const Header = () => {
                   <NavDropdown
                     title="About"
                     id={`offcanvasNavbarDropdown-expand-md`}
+                    className='navLink'
                   >
                     <NavDropdown.Item href="about-us" >About us</NavDropdown.Item>
                     <NavDropdown.Item href="about-team">About Team</NavDropdown.Item>
                     <NavDropdown.Item href="our-mission">Our Mission</NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link href="blogs" className='ms-5'>
+                <Nav.Link href="blogs" className='navLink'>
                     <div className={styles.div1}>
-                      <span className="B">Blogs </span> 
+                      <span className="text-white">Blogs </span> 
                       <span style={{fontSize: '9px', backgroundColor: 'orange', padding: '5px', borderRadius: '50%', fontWeight: 700}}>coming soon</span>
                     </div>
                   </Nav.Link>
-                  <Nav.Link href="abdm" className='ms-5'>
+                  <Nav.Link href="abdm" className='navLink'>
                     <div className={styles.div1}>
-                      <span className="A" >ABDM</span>
+                      <span className="text-white" >ABDM</span>
                       <span style={{fontSize: '9px', backgroundColor: 'orange', padding: '5px', borderRadius: '50%', fontWeight: 700}}>coming soon</span>
                     </div>
                   </Nav.Link>
