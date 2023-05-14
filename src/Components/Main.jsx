@@ -105,20 +105,20 @@ margin-left:87px;
 const Main = () => {
   return (
     <Container1>
-      <Header></Header>
-      <Container2>
-      <ContainerLeft>
-      <Heading2>Store All Your <span style={{color:"#23CFA4"}}>Medical    Documents</span> Online<span style={{color:"#23CFA4"}}>.</span></Heading2>
-      <Para>Also track your <span style={{color:"#23CFA4"}}>family's medical history </span>and share your prescriptions and test reports with doctors <span style={{color:"#23CFA4"}}>securely in one-click.</span></Para>
-      <Button1 target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfMp7EwAKtKYbvzCsNgXdwqGk-PHm1hPhpuZuvwWj-s81rQqg/viewform" style={{fontSize:'17px'}}>Register for early access </Button1>
-      <AiOutlineArrowRight className='arrow' style={{color:"#151514"}}></AiOutlineArrowRight>
-      </ContainerLeft> 
-      <ContainerRight>
-        <Image1 src={Phone} alt='Image2'></Image1>
-       </ContainerRight>
-      </Container2>
-      <CardSection></CardSection>
-      </Container1>
+      <Header/>
+        <Container2>
+          <ContainerLeft>
+            <Heading2>Store All Your <span style={{color:"#23CFA4"}}>Medical    Documents</span> Online<span style={{color:"#23CFA4"}}>.</span></Heading2>
+            <Para>Also track your <span style={{color:"#23CFA4"}}>family's medical history </span>and share your prescriptions and test reports with doctors <span style={{color:"#23CFA4"}}>securely in one-click.</span></Para>
+            <Button1 target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfMp7EwAKtKYbvzCsNgXdwqGk-PHm1hPhpuZuvwWj-s81rQqg/viewform" style={{fontSize:'17px'}}>Register for early access </Button1>
+            <AiOutlineArrowRight className='arrow' style={{color:"#151514"}}/>
+          </ContainerLeft> 
+          <ContainerRight>
+            <Image1 src={Phone} alt='Image2'></Image1>
+          </ContainerRight>
+        </Container2>
+      <CardSection/>
+    </Container1>
     
   )
 }

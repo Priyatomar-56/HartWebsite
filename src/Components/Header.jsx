@@ -13,7 +13,7 @@ const Header = () => {
     <>
         <Navbar key={'md'} bg={"black"} expand={'md'} className="mb-1">
           <Container fluid>
-            <Navbar.Brand href="/" className='ms-5'>
+            <Navbar.Brand href="/" className='navBrand'>
               <div className={styles.div}>
                 <Image src={Logo} width={150} height={150} alt="logo"/>
                 {/* <span className="text-white hart"> Hart</span> */}
@@ -28,7 +28,7 @@ const Header = () => {
             >
               <Offcanvas.Header closeButton >
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`} >
-                  Hart
+                <span className='text-white'>Hart</span> 
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -36,7 +36,8 @@ const Header = () => {
                   <NavDropdown
                     title="Our Product"
                     id={`offcanvasNavbarDropdown-expand-md`}
-                    className='ms-5 text-white'
+                    className='navLink'
+                    style={{color: '#fff'}}
                   >
                     <NavDropdown.Item href={`patients`}>For You</NavDropdown.Item>
                     <NavDropdown.Item href={`doctors`}> For Doctors </NavDropdown.Item>
@@ -45,6 +46,7 @@ const Header = () => {
                   <NavDropdown
                     title="About us"
                     id={`offcanvasNavbarDropdown-expand-md`}
+                    className='navLink'
                   >
                     <NavDropdown.Item href="about-us" >About us</NavDropdown.Item>
                     <NavDropdown.Item href="about-team">About Team</NavDropdown.Item>
