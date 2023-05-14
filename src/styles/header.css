@@ -1,49 +1,51 @@
-.hart{
-    background-image: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
-    background-clip: text;
-    box-decoration-break: clone;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
-    background-repeat: no-repeat;
-    font-weight: 700;
-    font-size: 30px;
-    margin-top: 5px;
-    color: rgb(46, 227, 227);
+.hart {
+  background-image: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+  background-clip: text;
+  box-decoration-break: clone;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  background-repeat: no-repeat;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 5px;
+  color: rgb(46, 227, 227);
 }
 
-.riya{
-    color: white;
+.riya {
+  color: white;
 }
 
-.div{
-    display: flex;
+.div {
+  display: flex;
 }
 
-.div1{
-    display: flex;
+.div1 {
+  display: flex;
 }
-.Product{
-    color: aliceblue;
+.Product {
+  color: aliceblue;
 }
-.B{
-    color: aliceblue;
+.B {
+  color: aliceblue;
+  text-decoration-line: none;
 }
-.A{
-    color: aliceblue;
+.A {
+  color: aliceblue;
+  text-decoration-line: none;
 }
-.P{
-    color: aliceblue;
+.P {
+  color: aliceblue;
 }
-@media(max-width: 500px){
-    .B{
-        color: black;
-    }
-    .A{
-        color: black;
-    }
-    .P{
-        color: rgb(19, 19, 20);
-    }
+@media (max-width: 500px) {
+  .B {
+    color: black;
+  }
+  .A {
+    color: black;
+  }
+  .P {
+    color: rgb(19, 19, 20);
+  }
 }

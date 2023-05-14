@@ -11,7 +11,7 @@ import Footer from './Footer';
 const CardSection = () => {
   return (
     <Container>
-     <Heading>Safe <span style={{color:"#23CFA4"}}>&</span> Secure <span style={{color:"#23CFA4"}}>.</span></Heading>
+     <Heading>Safe&nbsp;  <span style={{color:"#23CFA4"}}>& </span>&nbsp;Secure <span style={{color:"#23CFA4"}}>.</span></Heading>
      <Container2>
         <Card>
         <Image src={Phone} class="card-img-top" width={210} height={313} marginleft={"55px"} Resmarginleft={"44px"} alt="Fissure in Sandstone"/>

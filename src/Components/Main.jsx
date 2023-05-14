@@ -17,7 +17,6 @@ const Container2=styled.div`
   display:flex;
   flex-direction:row;
   flex-wrap: nowrap;
-  margin-top:65px;
   @media screen and (max-width: 500px){
     flex-direction:column;
 };
@@ -32,7 +31,7 @@ const Heading2=styled.div`
   font-size: 30px;
   font-weight:600;
   text-align:left;
-    margin-top:10px;
+  margin-top:10px;
 };
 `
 const ContainerLeft=styled.div`
@@ -71,7 +70,7 @@ const Para=styled.p`
 `
 const Button1=styled.a`
   height:45px; 
-  width:255px; 
+  width:260px; 
  background-color:#23CFA4;
   margin-top:20px;
   margin-left:30px;
