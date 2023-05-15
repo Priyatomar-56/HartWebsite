@@ -5,17 +5,17 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import styles from '../styles/header.css'
-import Logo from '../Images/text.png';
+import Logo from '../Images/text.jpg';
 import Image from "react-bootstrap/Image";
 
 const Header = () => {
   return (
     <>
-        <Navbar key={'md'} bg={"black"} expand={'md'} className="mb-1">
+        <Navbar key={'md'} bg={"black"} expand={'md'} className="mb-3">
           <Container fluid>
             <Navbar.Brand href="/" className='navBrand'>
               <div className={styles.div}>
-                <Image src={Logo} width={150} height={150} alt="logo"/>
+              <Image src={Logo} width={210} height={100} className="Logo1"alt="logo"/>
                 {/* <span className="text-white hart"> Hart</span> */}
               </div>
                  
@@ -52,7 +52,7 @@ const Header = () => {
                     <NavDropdown.Item href="about-team">About Team</NavDropdown.Item>
                     <NavDropdown.Item href="our-mission">Our Mission</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="blogs" className='ms-5'>
+                <Nav.Link href='#about' className='ms-5'>
                  <div className={styles.div1}>
                   <span className="B"><a className="B" href='#about'>About</a></span>
                 </div>
@@ -63,7 +63,7 @@ const Header = () => {
                       {/* <span style={{fontSize: '9px', backgroundColor: 'orange', padding: '5px', borderRadius: '50%', fontWeight: 700}}>coming soon</span> */}
                     {/* </div> */}
                 {/* </Nav.Link> */}
-                  <Nav.Link href="abdm" className='ms-5'>
+                  <Nav.Link href="abdm.html" className='ms-5'>
                     <div className={styles.div1}>
                       <span className="A" ><a  className="A" href='ABDM.html'>ABDM</a></span>
                       {/* <span style={{fontSize: '9px', backgroundColor: 'orange', padding: '5px', borderRadius: '50%', fontWeight: 700}}>coming soon</span> */}
